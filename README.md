@@ -1,5 +1,5 @@
 # SoundEffect
-SoundEffect is a full featured class for playing audio in iOS, OS X and tvOS apps.
+Sample class for quickly incorporating sound effects in iOS, OS X and tvOS apps.
 
 #Usage
 
