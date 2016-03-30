@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SoundEffect by TheDarkCode</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>SoundEffect</h1>
+        <p>Sample class for quickly incorporating sound effects in iOS, OS X and tvOS apps.</p>
+
+        <p class="view"><a href="https://github.com/TheDarkCode/SoundEffect">View the Project on GitHub <small>TheDarkCode/SoundEffect</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/TheDarkCode/SoundEffect/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/TheDarkCode/SoundEffect/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/TheDarkCode/SoundEffect">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="soundeffect" class="anchor" href="#soundeffect" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SoundEffect</h1>
+
+<p>Sample class for quickly incorporating sound effects in iOS, OS X and tvOS apps.</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<div class="highlight highlight-source-swift"><pre><span class="pl-c">// Initialize Options</span>
+<span class="pl-k">let</span> soundEffect <span class="pl-k">=</span> SoundEffect(<span class="pl-s"><span class="pl-pds">"</span>sound<span class="pl-pds">"</span></span>, fileType: <span class="pl-s"><span class="pl-pds">"</span>.mp3<span class="pl-pds">"</span></span>, enableSound: <span class="pl-c1">true</span>, enableLooping: <span class="pl-c1">true</span>, defaultVolume: <span class="pl-c1">0</span><span class="pl-k">.</span><span class="pl-c1">5</span>)
+
+<span class="pl-k">let</span> soundEffect2 <span class="pl-k">=</span> SoundEffect(<span class="pl-s"><span class="pl-pds">"</span>sound<span class="pl-pds">"</span></span>, fileType: <span class="pl-s"><span class="pl-pds">"</span>.mp3<span class="pl-pds">"</span></span>, enableSound: <span class="pl-c1">true</span>, enableLooping: <span class="pl-c1">true</span>, loopTotal: <span class="pl-c1">20</span>, defaultVolume: <span class="pl-c1">1</span><span class="pl-k">.</span><span class="pl-c1">0</span>)
+
+<span class="pl-k">let</span> soundEffect3 <span class="pl-k">=</span> SoundEffect(<span class="pl-s"><span class="pl-pds">"</span>sound<span class="pl-pds">"</span></span>, fileType: <span class="pl-s"><span class="pl-pds">"</span>.mp3<span class="pl-pds">"</span></span>, enableSound: <span class="pl-c1">true</span>, enableLooping: <span class="pl-c1">false</span>)
+
+<span class="pl-k">let</span> soundEffect4 <span class="pl-k">=</span> SoundEffect(<span class="pl-s"><span class="pl-pds">"</span>sound<span class="pl-pds">"</span></span>, fileType: <span class="pl-s"><span class="pl-pds">"</span>.mp3<span class="pl-pds">"</span></span>)
+
+<span class="pl-c">// Prepare to Play</span>
+soundEffect<span class="pl-k">.</span>prepareToPlay()
+
+<span class="pl-c">// Start Playing</span>
+soundEffect<span class="pl-k">.</span>play()
+
+<span class="pl-c">// Pause Playing</span>
+soundEffect<span class="pl-k">.</span>pause()
+
+<span class="pl-c">// Stop Playing</span>
+soundEffect<span class="pl-k">.</span>stop()
+
+<span class="pl-c">// Toggle Enabled</span>
+soundEffect<span class="pl-k">.</span>toggle()
+
+<span class="pl-c">// Disable Sound</span>
+soundEffect<span class="pl-k">.</span>disable()
+
+<span class="pl-c">// Enable Sound</span>
+soundEffect<span class="pl-k">.</span>enable()
+
+<span class="pl-c">// Set Volume</span>
+soundEffect<span class="pl-k">.</span>setVolume(<span class="pl-c1">1</span><span class="pl-k">.</span><span class="pl-c1">0</span>) <span class="pl-c">// Float 0.0-1.0</span>
+</pre></div>
+
+<h1>
+<a id="related-projects" class="anchor" href="#related-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Projects:</h1>
+
+<h3>
+<a id="example-swift-apps-by-mark-hamilton-dryverless" class="anchor" href="#example-swift-apps-by-mark-hamilton-dryverless" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Swift Apps by Mark Hamilton, Dryverless</h3>
+
+<p>Collection of example applications written in Swift / Objective-C for iOS 9.x (developed under 9.2.1 SDK - will be migrated to 9.3 when released)</p>
+
+<h6>
+<a id="httpsgithubcomthedarkcodeexample-swift-apps" class="anchor" href="#httpsgithubcomthedarkcodeexample-swift-apps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/TheDarkCode/Example-Swift-Apps">https://github.com/TheDarkCode/Example-Swift-Apps</a>
+</h6>
+
+<h1>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support:</h1>
+
+<h5>
+<a id="send-any-questions-or-requests-to-supportdryverlesscom" class="anchor" href="#send-any-questions-or-requests-to-supportdryverlesscom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Send any questions or requests to: <a href="mailto:support@dryverless.com">support@dryverless.com</a>
+</h5>
+
+<h1>
+<a id="contributing-in-5-easy-steps" class="anchor" href="#contributing-in-5-easy-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing in 5 Easy Steps</h1>
+
+<ul>
+<li>1) Fork this repository!</li>
+<li>2) Create your feature branch: <code>git checkout -b Your-New-Feature</code>
+</li>
+<li>3) Commit your changes: <code>git commit -am 'Adding some super awesome update'</code>
+</li>
+<li>4) Push to the branch: <code>git push origin Your-New-Feature</code>
+</li>
+<li>5) Submit a pull request!</li>
+</ul>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p>Copyright (c) 2016 Mark Hamilton / dryverless (<a href="http://www.dryverless.com">http://www.dryverless.com</a>)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
