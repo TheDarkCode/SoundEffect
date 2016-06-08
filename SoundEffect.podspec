@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SoundEffect"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "Sound Effect is a sample class for quickly incorporating sound effects in iOS, OS X and tvOS apps."
   s.homepage         = "https://github.com/TheDarkCode/SoundEffect"
   s.license          = 'MIT'
